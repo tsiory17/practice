@@ -45,6 +45,11 @@ module.exports = {
       chunks: ["index", "main"],
       filename: "index.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "./list.html",
+      chunks: ["list"],
+      filename: "list.html",
+    }),
   ],
   devServer: {
     static: "./dist",
